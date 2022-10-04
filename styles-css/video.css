@@ -1,0 +1,136 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-picture{
+    width: 70%;
+    border-radius: 50px;
+}
+
+.video-title, .video-title-link {
+    font-size: 14px;
+    margin-top: 0px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    
+}
+.video-title-link:hover {
+    text-decoration: underline;
+}
+.video-author, .video-stats {
+    font-size: 12px;
+    color: rgb(96,96,96);
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.video-title-link{
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
+
+
+.thumbnail {
+    max-width: 100%;
+    transition: all 1s;
+    margin-bottom: 5px;
+    object-fit: cover;
+    
+    aspect-ratio: 16 / 9;
+}
+.thumbnail:hover {
+    opacity: 0.8;
+    transform: 
+    scale(1.1);
+    cursor: pointer;
+}
+.video-time {
+    font-size: 10px;
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    background-color: black;
+    color: white;
+    padding: 4px 4px;
+    border-radius: 4px;
+}
+
+.Suchleiste:hover {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    
+}
+.video-box {
+    font-family: Roboto, Arial;
+    max-width: 400px;
+}
+.button-container {
+    margin-top: 50px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    
+
+}
+.secret-button {
+    background-color: rgb(250, 250, 250);
+    border: none;
+    opacity: 1;
+    position: relative;
+}
+.secret-button-icon {
+    height: 50px;
+}
+.secret-button .secret-text-container{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 4px;
+    font-size: 12px; 
+    bottom: -30px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.1s;
+    white-space: nowrap;
+}
+.secret-button:hover .secret-text-container{
+    opacity: 1;
+}
+
+.secret-button:after {
+    opacity: 0.5;
+}
+
