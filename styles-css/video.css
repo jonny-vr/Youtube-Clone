@@ -86,8 +86,8 @@
     transition: 0.5s;
 }
 .thumbnail:hover + .video-time{
-    bottom: 10px;
-    right: 7px;
+    bottom: 8px;
+    right: 5px;
 }
 
 .Suchleiste:hover {
